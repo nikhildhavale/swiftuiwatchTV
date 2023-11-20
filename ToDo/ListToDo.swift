@@ -19,7 +19,7 @@ struct ListToDoView: View {
                 ForEach(todos, id:\.self) { todos in
                     Text(todos.desc ?? "" )
                 }
-            }.toolbarTitleDisplayMode(.inline).navigationTitle("Prayer Points").toolbar(content: {
+            }.toolbarTitleDisplayMode(.inline).navigationTitle("ToDo").toolbar(content: {
                 Button(action: {
                     isPresented.toggle()
                 }, label: {

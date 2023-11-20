@@ -10,6 +10,7 @@ import SwiftUI
 struct AddToDo: View {
     @State var text:String = ""
     @Binding var isPresented:Bool
+    @FocusState var focus:Bool
     @EnvironmentObject var manager: DataManager
     @Environment(\.managedObjectContext) var viewContext
 
@@ -31,6 +32,8 @@ struct AddToDo: View {
                     
                 })
             
+        }.onAppear{
+            focus = true 
         }
         
     }
@@ -51,9 +54,9 @@ struct AddToDo: View {
     {
         Form{
 #if os(watchOS)
-            TextField("", text: $text)
+            TextField("", text: $text).focused($focus)
 #else
-            TextEditor(text: $text)
+            TextEditor(text: $text).focused($focus)
 #endif
         }
         
