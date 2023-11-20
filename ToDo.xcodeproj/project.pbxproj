@@ -29,6 +29,8 @@
 		AE6DFCD82B0B6CEB0091A10B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCD72B0B6CEB0091A10B /* DataManager.swift */; };
 		AE6DFCD92B0B6CEB0091A10B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCD72B0B6CEB0091A10B /* DataManager.swift */; };
 		AE6DFCDA2B0B6CEB0091A10B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCD72B0B6CEB0091A10B /* DataManager.swift */; };
+		AEE443302B0B844400D91685 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4432F2B0B844400D91685 /* PageController.swift */; };
+		AEE443322B0B85F500D91685 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4432F2B0B844400D91685 /* PageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,7 @@
 		AE6DFCCE2B0B5EE10091A10B /* AddToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDo.swift; sourceTree = "<group>"; };
 		AE6DFCD32B0B6C890091A10B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		AE6DFCD72B0B6CEB0091A10B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		AEE4432F2B0B844400D91685 /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 				AE6DFC752B0B34E80091A10B /* ToDo.entitlements */,
 				AE6DFC762B0B34E80091A10B /* Preview Content */,
 				AE6DFCC82B0B43720091A10B /* ListToDo.swift */,
+				AEE4432F2B0B844400D91685 /* PageController.swift */,
 				AE6DFCCE2B0B5EE10091A10B /* AddToDo.swift */,
 				AE6DFCD72B0B6CEB0091A10B /* DataManager.swift */,
 			);
@@ -335,6 +339,7 @@
 			files = (
 				AE6DFC702B0B34E70091A10B /* ToDoApp.swift in Sources */,
 				AE6DFCD82B0B6CEB0091A10B /* DataManager.swift in Sources */,
+				AEE443302B0B844400D91685 /* PageController.swift in Sources */,
 				AE6DFCCF2B0B5EE10091A10B /* AddToDo.swift in Sources */,
 				AE6DFCC92B0B43720091A10B /* ListToDo.swift in Sources */,
 				AE6DFCD42B0B6C890091A10B /* Model.xcdatamodeld in Sources */,
@@ -359,6 +364,7 @@
 			files = (
 				AE6DFCC72B0B42A60091A10B /* ToDoApp.swift in Sources */,
 				AE6DFCDA2B0B6CEB0091A10B /* DataManager.swift in Sources */,
+				AEE443322B0B85F500D91685 /* PageController.swift in Sources */,
 				AE6DFCD12B0B5F830091A10B /* AddToDo.swift in Sources */,
 				AE6DFCCB2B0B43A20091A10B /* ListToDo.swift in Sources */,
 				AE6DFCD62B0B6C890091A10B /* Model.xcdatamodeld in Sources */,

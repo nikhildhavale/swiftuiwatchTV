@@ -17,7 +17,15 @@ struct ListToDoView: View {
         NavigationStack{
             List{
                 ForEach(todos, id:\.self) { todos in
-                    Text(todos.desc ?? "" )
+#if os(watchOS)
+                    NavigationLink(todos.desc ?? "", destination: {
+                       showToDoPage()
+                    })
+#else
+                    NavigationLink(todos.desc ?? "", destination: {
+                        PageView(pages: self.todos.map{Text($0.desc ?? "")}, currentPage: self.todos.firstIndex(of: todos) ?? 0)
+                    })
+#endif
                 }
             }.toolbarTitleDisplayMode(.inline).navigationTitle("ToDo").toolbar(content: {
                 Button(action: {
@@ -30,5 +38,15 @@ struct ListToDoView: View {
             AddToDo(text: "",isPresented: $isPresented)
         }).environmentObject(manager)
             .environment(\.managedObjectContext,manager.container.viewContext)
+    }
+    /// we can use this for ios too but learning integration of uiivewcontroller representable
+    func showToDoPage() -> some View
+    {
+        TabView {
+            ForEach(self.todos, id: \.self) { todo in
+                Text(todo.desc ?? "" )
+            }
+        }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }
