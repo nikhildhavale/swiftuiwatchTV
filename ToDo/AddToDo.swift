@@ -8,11 +8,38 @@
 import SwiftUI
 
 struct AddToDo: View {
+    @State var text:String = ""
+    @Binding var showAdd:Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            getTextEditor()
+                .toolbar(content: {
+                    ToolbarItem(placement: .cancellationAction, content: {
+                        Button("Cancel",action: {
+                            showAdd = false
+                        })
+                    })
+                    ToolbarItem(placement: .topBarTrailing, content: {
+                        Button("Done", action: {
+                            showAdd = false
+                        })
+                    })
+                    
+                })
+            
+        }
+        
+    }
+    @ViewBuilder func getTextEditor() -> some View
+    {
+        Form{
+#if os(watchOS)
+            TextField("", text: $text)
+#else
+            TextEditor(text: $text)
+#endif
+        }
+        
     }
 }
 
-#Preview {
-    AddToDo()
-}

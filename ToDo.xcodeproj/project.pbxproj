@@ -12,7 +12,7 @@
 		AE6DFC782B0B34E80091A10B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6DFC772B0B34E80091A10B /* Preview Assets.xcassets */; };
 		AE6DFCA52B0B3FE90091A10B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6DFCA42B0B3FE90091A10B /* Assets.xcassets */; };
 		AE6DFCA82B0B3FE90091A10B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6DFCA72B0B3FE90091A10B /* Preview Assets.xcassets */; };
-		AE6DFCAB2B0B3FE90091A10B /* WatchTO Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AE6DFC9E2B0B3FE80091A10B /* WatchTO Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE6DFCAB2B0B3FE90091A10B /* ToDo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AE6DFC9E2B0B3FE80091A10B /* ToDo.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AE6DFCBB2B0B41E90091A10B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6DFCBA2B0B41E90091A10B /* Assets.xcassets */; };
 		AE6DFCBE2B0B41E90091A10B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6DFCBD2B0B41E90091A10B /* Preview Assets.xcassets */; };
 		AE6DFCC62B0B42A50091A10B /* ToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFC6F2B0B34E70091A10B /* ToDoApp.swift */; };
@@ -20,6 +20,9 @@
 		AE6DFCC92B0B43720091A10B /* ListToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCC82B0B43720091A10B /* ListToDo.swift */; };
 		AE6DFCCA2B0B43A10091A10B /* ListToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCC82B0B43720091A10B /* ListToDo.swift */; };
 		AE6DFCCB2B0B43A20091A10B /* ListToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCC82B0B43720091A10B /* ListToDo.swift */; };
+		AE6DFCCF2B0B5EE10091A10B /* AddToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCCE2B0B5EE10091A10B /* AddToDo.swift */; };
+		AE6DFCD02B0B5F830091A10B /* AddToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCCE2B0B5EE10091A10B /* AddToDo.swift */; };
+		AE6DFCD12B0B5F830091A10B /* AddToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6DFCCE2B0B5EE10091A10B /* AddToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				AE6DFCAB2B0B3FE90091A10B /* WatchTO Watch App.app in Embed Watch Content */,
+				AE6DFCAB2B0B3FE90091A10B /* ToDo.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,13 +58,16 @@
 		AE6DFC812B0B34E80091A10B /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
 		AE6DFC8B2B0B34E80091A10B /* ToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITests.swift; sourceTree = "<group>"; };
 		AE6DFC8D2B0B34E80091A10B /* ToDoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AE6DFC9E2B0B3FE80091A10B /* WatchTO Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchTO Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6DFC9E2B0B3FE80091A10B /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6DFCA42B0B3FE90091A10B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6DFCA72B0B3FE90091A10B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE6DFCB42B0B41E80091A10B /* TVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6DFCBA2B0B41E90091A10B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6DFCBD2B0B41E90091A10B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE6DFCC82B0B43720091A10B /* ListToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListToDo.swift; sourceTree = "<group>"; };
+		AE6DFCCC2B0B55FF0091A10B /* WatchTO Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchTO Watch App.entitlements"; sourceTree = "<group>"; };
+		AE6DFCCD2B0B56260091A10B /* TVOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TVOS.entitlements; sourceTree = "<group>"; };
+		AE6DFCCE2B0B5EE10091A10B /* AddToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6DFC6C2B0B34E70091A10B /* ToDo.app */,
-				AE6DFC9E2B0B3FE80091A10B /* WatchTO Watch App.app */,
+				AE6DFC9E2B0B3FE80091A10B /* ToDo.app */,
 				AE6DFCB42B0B41E80091A10B /* TVOS.app */,
 			);
 			name = Products;
@@ -119,6 +125,7 @@
 				AE6DFC752B0B34E80091A10B /* ToDo.entitlements */,
 				AE6DFC762B0B34E80091A10B /* Preview Content */,
 				AE6DFCC82B0B43720091A10B /* ListToDo.swift */,
+				AE6DFCCE2B0B5EE10091A10B /* AddToDo.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 		AE6DFC9F2B0B3FE80091A10B /* WatchTO Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				AE6DFCCC2B0B55FF0091A10B /* WatchTO Watch App.entitlements */,
 				AE6DFCA42B0B3FE90091A10B /* Assets.xcassets */,
 				AE6DFCA62B0B3FE90091A10B /* Preview Content */,
 			);
@@ -168,6 +176,7 @@
 		AE6DFCB52B0B41E80091A10B /* TVOS */ = {
 			isa = PBXGroup;
 			children = (
+				AE6DFCCD2B0B56260091A10B /* TVOS.entitlements */,
 				AE6DFCBA2B0B41E90091A10B /* Assets.xcassets */,
 				AE6DFCBC2B0B41E90091A10B /* Preview Content */,
 			);
@@ -218,7 +227,7 @@
 			);
 			name = "WatchTO Watch App";
 			productName = "WatchTO Watch App";
-			productReference = AE6DFC9E2B0B3FE80091A10B /* WatchTO Watch App.app */;
+			productReference = AE6DFC9E2B0B3FE80091A10B /* ToDo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AE6DFCB32B0B41E80091A10B /* TVOS */ = {
@@ -315,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE6DFC702B0B34E70091A10B /* ToDoApp.swift in Sources */,
+				AE6DFCCF2B0B5EE10091A10B /* AddToDo.swift in Sources */,
 				AE6DFCC92B0B43720091A10B /* ListToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE6DFCC62B0B42A50091A10B /* ToDoApp.swift in Sources */,
+				AE6DFCD02B0B5F830091A10B /* AddToDo.swift in Sources */,
 				AE6DFCCA2B0B43A10091A10B /* ListToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE6DFCC72B0B42A60091A10B /* ToDoApp.swift in Sources */,
+				AE6DFCD12B0B5F830091A10B /* AddToDo.swift in Sources */,
 				AE6DFCCB2B0B43A20091A10B /* ListToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo/Preview Content\"";
+				DEVELOPMENT_TEAM = V4CVYUB88D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -489,7 +502,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nikhil.ToDo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.ToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -509,6 +522,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo/Preview Content\"";
+				DEVELOPMENT_TEAM = V4CVYUB88D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -526,7 +540,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nikhil.ToDo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.ToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -541,21 +555,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchTO Watch App/WatchTO Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchTO Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = V4CVYUB88D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchTO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = nikhil.ToDo;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.nikhil.ToDo;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nikhil.ToDo.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.ToDo.watchkitapp;
+				PRODUCT_NAME = ToDo;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -570,21 +585,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchTO Watch App/WatchTO Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchTO Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = V4CVYUB88D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchTO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = nikhil.ToDo;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.nikhil.ToDo;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nikhil.ToDo.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.ToDo.watchkitapp;
+				PRODUCT_NAME = ToDo;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -600,11 +616,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TVOS/TVOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TVOS/Preview Content\"";
+				DEVELOPMENT_TEAM = V4CVYUB88D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDo;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,7 +631,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nikhil.TVOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.TVOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -627,11 +646,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TVOS/TVOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TVOS/Preview Content\"";
+				DEVELOPMENT_TEAM = V4CVYUB88D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDo;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -639,7 +661,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nikhil.TVOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.TVOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
