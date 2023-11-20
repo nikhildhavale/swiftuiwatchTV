@@ -40,6 +40,7 @@ struct ListToDoView: View {
             AddToDo(text: "",isPresented: $isPresented)
         }).environmentObject(manager)
             .environment(\.managedObjectContext,manager.container.viewContext)
+        
     }
     /// we can use this for ios too but learning integration of uiivewcontroller representable
     func showToDoPage() -> some View
@@ -50,6 +51,19 @@ struct ListToDoView: View {
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+    }
+    func saveTodo(text:String)
+    {
+        let todo = Todo(context: self.viewContext)
+        todo.desc = text
+        todo.id = Date().timeIntervalSince1970
+        do{
+            try self.viewContext.save()
+        }
+        catch
+        {
+            
+        }
     }
     private func delete(at offsets: IndexSet) {
         for index in offsets {

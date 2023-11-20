@@ -8,7 +8,6 @@
 import Foundation
 import CoreData
 class DataManager: NSObject, ObservableObject {
-    @Published var todos: [Todo] = [Todo]()
     // Add the Core Data container with the model name
     let container: NSPersistentContainer = NSPersistentContainer(name: "Model")
     
@@ -19,6 +18,7 @@ class DataManager: NSObject, ObservableObject {
         let storeDescription = NSPersistentStoreDescription(url: storeURL)
         container.persistentStoreDescriptions = [storeDescription]
         container.loadPersistentStores { _, _ in }
+        
     }
    
 }
