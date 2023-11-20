@@ -9,19 +9,23 @@ import SwiftUI
 
 struct AddToDo: View {
     @State var text:String = ""
-    @Binding var showAdd:Bool
+    @Binding var isPresented:Bool
+    @EnvironmentObject var manager: DataManager
+    @Environment(\.managedObjectContext) var viewContext
+
     var body: some View {
         NavigationStack{
             getTextEditor()
                 .toolbar(content: {
                     ToolbarItem(placement: .cancellationAction, content: {
                         Button("Cancel",action: {
-                            showAdd = false
+                            isPresented = false
                         })
                     })
                     ToolbarItem(placement: .topBarTrailing, content: {
                         Button("Done", action: {
-                            showAdd = false
+                            isPresented = false
+                            saveTodo()
                         })
                     })
                     
@@ -29,6 +33,19 @@ struct AddToDo: View {
             
         }
         
+    }
+    func saveTodo()
+    {
+        let todo = Todo(context: self.viewContext)
+        todo.desc = text
+        todo.id = Date().timeIntervalSince1970
+        do{
+            try self.viewContext.save()
+        }
+        catch
+        {
+            
+        }
     }
     @ViewBuilder func getTextEditor() -> some View
     {

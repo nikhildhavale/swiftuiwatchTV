@@ -8,25 +8,27 @@
 import SwiftUI
 
 struct ListToDoView: View {
-    @State var showAdd = false
+    @State var isPresented = false
+    @EnvironmentObject var manager: DataManager
+    @FetchRequest(sortDescriptors: [])
+    private var todos: FetchedResults<Todo>
+
     var body: some View {
         NavigationStack{
             List{
-                Text("Prayer")
+                ForEach(todos, id:\.self) { todos in
+                    Text(todos.desc ?? "" )
+                }
             }.toolbarTitleDisplayMode(.inline).navigationTitle("Prayer Points").toolbar(content: {
                 Button(action: {
-                    showAdd.toggle()
+                    isPresented.toggle()
                 }, label: {
                     Image(systemName: "plus")
                 })
             })
-        }.sheet(isPresented: $showAdd, content: {
-            AddToDo(text: "",showAdd: $showAdd)
-        })
+        }.sheet(isPresented: $isPresented, content: {
+            AddToDo(text: "",isPresented: $isPresented)
+        }).environmentObject(manager)
+            .environment(\.managedObjectContext,manager.container.viewContext)
     }
-}
-
-class ListToDoViewModel:ObservableObject
-{
-    
 }

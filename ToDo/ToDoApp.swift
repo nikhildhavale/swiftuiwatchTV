@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ToDoApp: App {
+    @StateObject private var manager: DataManager = DataManager()
+
     var body: some Scene {
         WindowGroup {
             ListToDoView()
+                .environmentObject(manager)
+                .environment(\.managedObjectContext, manager.container.viewContext)
         }
     }
 }
