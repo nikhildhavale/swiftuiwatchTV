@@ -10,6 +10,7 @@ import SwiftUI
 struct ListToDoView: View {
     @State var isPresented = false
     @EnvironmentObject var manager: DataManager
+    @Environment(\.managedObjectContext) var viewContext
     @FetchRequest(sortDescriptors: [])
     private var todos: FetchedResults<Todo>
 
@@ -26,8 +27,9 @@ struct ListToDoView: View {
                         PageView(pages: self.todos.map{Text($0.desc ?? "")}, currentPage: self.todos.firstIndex(of: todos) ?? 0)
                     })
 #endif
-                }
-            }.toolbarTitleDisplayMode(.inline).navigationTitle("ToDo").toolbar(content: {
+                }.onDelete(perform: delete)
+            }
+            .toolbarTitleDisplayMode(.inline).navigationTitle("ToDo").toolbar(content: {
                 Button(action: {
                     isPresented.toggle()
                 }, label: {
@@ -48,5 +50,16 @@ struct ListToDoView: View {
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+    }
+    private func delete(at offsets: IndexSet) {
+        for index in offsets {
+            let todo = todos[index]
+            self.viewContext.delete(todo)
+            do {
+                try viewContext.save()
+            } catch {
+                // handle the Core Data error
+            }
+        }
     }
 }
